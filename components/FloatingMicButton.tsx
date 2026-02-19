@@ -8,8 +8,11 @@ import { VoiceTranscriptPreview } from "./VoiceTranscriptPreview";
 type STTMode = "inject" | "chat";
 
 export function FloatingMicButton() {
+  const [mounted, setMounted] = useState(false);
   const [mode, setMode] = useState<STTMode>("inject");
   const [showMenu, setShowMenu] = useState(false);
+
+  useEffect(() => setMounted(true), []);
 
   const {
     isListening,
@@ -97,7 +100,7 @@ export function FloatingMicButton() {
     [resetTranscript]
   );
 
-  if (!isSupported) return null;
+  if (!mounted || !isSupported) return null;
 
   return (
     <>

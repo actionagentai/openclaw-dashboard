@@ -64,7 +64,11 @@ export function useSpeechToText(
   const [error, setError] = useState<string | null>(null);
 
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
-  const isSupported = typeof window !== "undefined" && getSpeechRecognition() !== null;
+  const [isSupported, setIsSupported] = useState(false);
+
+  useEffect(() => {
+    setIsSupported(getSpeechRecognition() !== null);
+  }, []);
 
   const startListening = useCallback(() => {
     const SpeechRecognitionCtor = getSpeechRecognition();
