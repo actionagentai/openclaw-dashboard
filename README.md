@@ -2,6 +2,8 @@
 
 A React/Next.js visual dashboard for the [OpenClaw](https://github.com/openclaw/openclaw) AI gateway. Every CLI command represented as a visual UI page, with **speech-to-text everywhere** as a first-class feature.
 
+![OpenClaw Dashboard](screenshots/dashboard-tour.gif)
+
 ## What is this?
 
 OpenClaw is a self-hosted AI assistant gateway with 35+ CLI commands, 50+ skills, and 20+ messaging channel integrations. This dashboard provides a modern web interface for managing and interacting with your OpenClaw gateway — no terminal required.
