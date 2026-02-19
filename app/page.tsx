@@ -114,10 +114,10 @@ export default function OpenClawOverviewPage() {
 
       {/* Resource Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <ResourceCard icon={<Bot className="w-5 h-5" />} label="Agents" count={agentCount} href="/dashboard/openclaw/agents" />
-        <ResourceCard icon={<Cpu className="w-5 h-5" />} label="Models" count={modelCount} href="/dashboard/openclaw/models" />
-        <ResourceCard icon={<Radio className="w-5 h-5" />} label="Channels" count={channelMeta.length} href="/dashboard/openclaw/channels" />
-        <ResourceCard icon={<Zap className="w-5 h-5" />} label="Skills" count={0} href="/dashboard/openclaw/skills" />
+        <ResourceCard icon={<Bot className="w-5 h-5" />} label="Agents" count={agentCount} href="agents" />
+        <ResourceCard icon={<Cpu className="w-5 h-5" />} label="Models" count={modelCount} href="models" />
+        <ResourceCard icon={<Radio className="w-5 h-5" />} label="Channels" count={channelMeta.length} href="channels" />
+        <ResourceCard icon={<Zap className="w-5 h-5" />} label="Skills" count={0} href="skills" />
       </div>
 
       {/* Connected Clients / Presence */}

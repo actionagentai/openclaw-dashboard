@@ -52,7 +52,7 @@ export default function OpenClawAgentsPage() {
             <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
           </button>
           <a
-            href="/dashboard/openclaw/agents/new"
+            href="agents/new"
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors"
           >
             <Plus className="w-4 h-4" />
@@ -161,7 +161,7 @@ function AgentCard({
 
       <div className="flex items-center gap-1 mt-4 opacity-0 group-hover:opacity-100 transition-opacity">
         <a
-          href={`/dashboard/openclaw/agents/${agent.id}`}
+          href={`agents/${agent.id}`}
           className="flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs hover:bg-white/5 transition-colors"
           style={{ color: "var(--text-secondary)" }}
         >
